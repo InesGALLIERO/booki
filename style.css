@@ -2,6 +2,9 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
+body{
+    margin: 0px;
+}
 header{
     display: flex;
     flex-direction: row;
@@ -17,10 +20,9 @@ header, footer{
     padding: 20px 10px;
 }
 nav a {
-   margin-left: 30px;
+margin-left: 30px;
   color: inherit;
   text-decoration: none;
-  font-weight: 600;
   padding-top: 32px; 
   padding-bottom: 10px;
   border-top: 2px solid transparent;
@@ -298,6 +300,9 @@ a {
 }
 /****** Activités à Marseille ***********/
 /****** Section Activités à Marseille ***********/
+.activites{
+    margin-bottom: 40px;
+}
 .card-activites{
     display: flex;
     flex-wrap: wrap;
@@ -377,9 +382,6 @@ footer {
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 1024px) {
     /* FORMULAIRE DE RECHERCHE */
-    .search-form {
-    width: 100%;
-    }
     .search-input {
     width: 100%;
     }
@@ -465,13 +467,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 0px;   
+    padding-left: 0px;  
+    padding-right: 0px; 
   }
   nav {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    gap: 10px;
   }
   nav a {
     flex: 1;
@@ -480,7 +482,7 @@ footer {
     padding-top: 32px;
     padding-bottom: 10px;
     margin-left: 0px;
-    border-bottom: 2px solid transparent; 
+    border-bottom: 2px solid #F2F2F2; 
     box-sizing: border-box;
   }
   .link:hover{
@@ -534,6 +536,7 @@ footer {
   }
   .hebergements-and-populaires section{
     background-color: white;
+    width : 100%;
   }
   .card-hebergement {
     width: 100%;
@@ -543,6 +546,7 @@ footer {
     margin-top: 30px;
     background-color: var(--main-bg-color);
     border-radius: 0px;
+    width: 100%;
     }
   .populaires-cards {
     flex-direction: column;
